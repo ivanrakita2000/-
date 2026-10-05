@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Перекуп — прототип</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">ПЕРЕКУП</div>
+  <div class="balance">₽ <span id="balance">150000</span></div>
+</header>
+<main>
+  <section class="hero">
+    <div><span class="pill">BETA</span><h1>Рынок автомобилей</h1><p>Покупай выгодно, подготавливай и продавай дороже.</p></div>
+  </section>
+  <nav class="tabs">
+    <button class="active" data-tab="market">Рынок</button>
+    <button data-tab="garage">Гараж <span id="garageCount">0</span></button>
+    <button data-tab="rating">Рейтинг</button>
+  </nav>
+  <section id="market" class="panel active"></section>
+  <section id="garage" class="panel"></section>
+  <section id="rating" class="panel"></section>
+</main>
+<div id="modal" class="modal hidden"></div>
+<script src="app.js"></script>
+</body>
+</html>
